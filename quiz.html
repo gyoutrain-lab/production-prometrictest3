@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quiz — Prometric Test</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+
+<div class="card hidden" id="quizCard">
+  <div id="progressInfo" class="muted"></div>
+  <div id="questionBox">
+    <p id="questionText"></p>
+    <div id="options"></div>
+  </div>
+  <button id="nextBtn" onclick="nextQuestion()">Next</button>
+  <footer>Prepared by: <b>Giyono Asfarrasyid, ETK Yogyakarta</b></footer>
+</div>
+
+<div class="card hidden" id="resultCard">
+  <h2>Your Report</h2>
+  <div id="summary"></div>
+  <h3>Answer Key & Rationale</h3>
+  <div id="answers"></div>
+  <button onclick="goToDashboard()">Back to Dashboard</button>
+  <footer>Prepared by: <b>Giyono Asfarrasyid, ETK Yogyakarta</b></footer>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
