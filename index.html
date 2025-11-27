@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Prometric Nursing Test — Demo</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <div class="card" id="hero">
+    <h1>Prometric Nursing Test — Demo</h1>
+    <p class="muted">Try a demo; request unlock for the full test (500 Qs, rationale included).</p>
+  </div>
+
+  <div class="card" id="registrationCard">
+    <h2>Candidate Confirmation</h2>
+    <label>Name</label>
+    <input id="regName" type="text" placeholder="Your full name">
+    <label>WhatsApp (WA) — number only, e.g. 6281234567890</label>
+    <input id="regWA" type="text" placeholder="Your WA number">
+    <button id="confirmBtn" onclick="submitConfirmation()">Confirm & Request Unlock</button>
+    <p id="confirmMessage" class="muted"></p>
+
+    <div id="waNotifyArea" class="hidden">
+      <p class="small">Notify admin to confirm payment:</p>
+      <a id="waNotifyBtn" class="wa-btn" href="#" target="_blank" rel="noopener">📩 Notify Admin on WhatsApp</a>
+      <p id="waHint" class="muted small">Admin number: +6285399652487</p>
+    </div>
+
+    <footer>Prepared by: <b>Giyono Asfarrasyid, ETK Yogyakarta</b></footer>
+  </div>
+
+  <div class="card hidden" id="unlockCard">
+    <h2>Enter Unlock Code</h2>
+    <input id="unlockInput" type="text" placeholder="Unlock code here">
+    <button onclick="verifyCode()">Unlock</button>
+    <p id="unlockMessage" class="muted"></p>
+    <footer>Prepared by: <b>Giyono Asfarrasyid, ETK Yogyakarta</b></footer>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
